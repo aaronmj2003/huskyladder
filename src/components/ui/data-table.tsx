@@ -77,7 +77,7 @@ export function DataTable<TData, TValue>({
               </TableRow>
             ))
           ) : (
-            <TableRow>
+            <TableRow className="hover:bg-gray-100 dark:hover:bg-zinc-800">
               <TableCell colSpan={columns.length} className="text-center">
                 No results.
               </TableCell>

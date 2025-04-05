@@ -11,10 +11,10 @@ const data: LeaderboardEntry[] = [
 
 export default function LeaderboardPage() {
   return (
-    <main className="p-8 min-h-screen bg-white">
-      <h1 className="text-3xl font-bold text-purple-800 mb-6 text-center">
-        🏆 HuskyLadder Leaderboard
-      </h1>
+    <main className="p-8 min-h-screen bg-white dark:bg-zinc-900 text-gray-900 dark:text-gray-100">
+        <h1 className="text-3xl font-bold text-purple-800 dark:text-purple-300 mb-6 text-center">
+            🏆 HuskyLadder Leaderboard
+        </h1>
       <DataTable columns={columns} data={data} />
     </main>
   );
