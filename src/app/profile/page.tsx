@@ -4,10 +4,10 @@ import { useState } from "react";
 
 export default function ProfilePage() {
   const [profile, setProfile] = useState({
-    gamertag: "TopDawgUW",
-    game: "Valorant",
-    rank: "Immortal",
-    hours: "320",
+    gamertag: "superaaron35",
+    game: "League of Legends",
+    rank: "Challenger",
+    hours: "10000000000",
   });
 
   const [isEditing, setIsEditing] = useState(false);
@@ -29,10 +29,9 @@ export default function ProfilePage() {
       </h1>
 
       <div className="w-full max-w-md bg-gray-50 dark:bg-zinc-800 p-6 rounded-lg shadow-md space-y-4">
-        {/* Gamer Tag */}
         <div>
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-            Gamer Tag
+            Username
           </label>
           {isEditing ? (
             <input
@@ -45,8 +44,6 @@ export default function ProfilePage() {
             <p className="mt-1 font-semibold">{profile.gamertag}</p>
           )}
         </div>
-
-        {/* Game */}
         <div>
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
             Game
@@ -62,8 +59,6 @@ export default function ProfilePage() {
             <p className="mt-1">{profile.game}</p>
           )}
         </div>
-
-        {/* Rank */}
         <div>
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
             Rank
@@ -79,8 +74,6 @@ export default function ProfilePage() {
             <p className="mt-1">{profile.rank}</p>
           )}
         </div>
-
-        {/* Hours */}
         <div>
           <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">
             Hours Played
@@ -97,8 +90,6 @@ export default function ProfilePage() {
             <p className="mt-1">{profile.hours}</p>
           )}
         </div>
-
-        {/* Buttons */}
         <div className="flex justify-end pt-4">
           {isEditing ? (
             <button

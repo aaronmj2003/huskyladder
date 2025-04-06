@@ -5,8 +5,7 @@ export default function Home() {
     🎮 Welcome to HuskyLadder
   </h1>
   <p className="text-lg text-gray-600 dark:text-gray-300 text-center max-w-xl">
-    Track your gaming dominance at UW. Submit your stats, climb the leaderboard,
-    and flex your rank.
+    Track gaming leaderboards for UW students. Submit your stats and see where you rank!
   </p>
 </main>
   );

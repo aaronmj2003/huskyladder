@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 const navItems = [
   { name: "Home", href: "/" },
-  { name: "Leaderboard", href: "/leaderboard" },
+  { name: "Leaderboards", href: "/leaderboard" },
   { name: "Profile", href: "/profile" },
 ];
 
@@ -39,7 +39,6 @@ export default function Navbar() {
             {item.name}
           </Link>
         ))}
-        {/* Toggle Button */}
         {mounted && (
           <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
